@@ -187,7 +187,7 @@ res2 <- rcorr(as.matrix(frequency3_greaterThan1_NOwords))
 res2
 
 # Plot correlation matrix.  
-## HITS A STRANGE ERROR, BUT STILL CREATES GRAPHIC.  JUST CONTINUE RUN CODE AFTERWARDS.
+## Keeps giving a strange error but still manages to create graphic
 corrplot(res2$r, type="upper", order="hclust", 
          p.mat = res2$P, sig.level = 0.05, insig = "blank")
 
